@@ -1,0 +1,14 @@
+{
+  "name": "abtime",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter client dev\" \"pnpm --filter server dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
